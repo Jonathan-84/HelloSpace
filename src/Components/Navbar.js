@@ -8,14 +8,19 @@ function Navbar(){
     return (
       <>
                 <div className='nav-container'>
+                  <div className="header-image">
+                    <div className='header-container'>
+                  <h1 className="nav-text">Hello Space</h1>
                 <div className='nav-links'>
-                <ul className='nav-item active'>
-                <Link to="/" className="link-text m-3  text-dark font-weight-bold fw-bold main-link">Home</Link>
+                <ul >
+                <Link to="/" className="nav-text">Home</Link>
                         </ul>
                 
-                <ul className='nav-item active'>
-                <Link to="/Earth" className="link-text text-dark font-weight-bold m-3 add-padding main-link">Earth</Link>
+                <ul>
+                <Link to="/Earth" className="nav-text">Earth</Link>
                 </ul>
+                </div>
+                </div>
                 </div>
                 </div>
       </>
