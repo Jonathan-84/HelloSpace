@@ -11,10 +11,10 @@ function Footer() {
     <div className="footer-container" >  
 
 <ul>
-    <Link href="https://github.com/Jonathan-84" target="_blank">GitHub</Link>
+    <Link className='footer-text' href="https://github.com/Jonathan-84" target="_blank">GitHub</Link>
  </ul>
  <ul>
-    <Link href="https://www.linkedin.com/company/exley-deadlines" target="_blank">LinkedIn</Link>
+    <Link className='footer-text' href="https://www.linkedin.com/company/exley-deadlines" target="_blank">LinkedIn</Link>
     </ul>
 </div>
 </div>

@@ -12,6 +12,7 @@ function App() {
       <Router>
         <>
           <Navbar />
+          <div className='page-container'>
           <div className='LeftPanel'>
           <Music/>
           </div>
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/saved' component={SavedBooks} />
   <Route component={SearchBooks} />*/}
           </Switch>
+          </div>
           </div>
           <div className='footer-size'>
           <Footer/>

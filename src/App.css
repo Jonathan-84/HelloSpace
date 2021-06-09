@@ -19,16 +19,16 @@ code {
 .LeftPanel {
   width:30%;
   float: left;
-  position: fixed;
-  z-index: 1;
   background-color: gray;
-  overflow-x: hidden;
+  height: 79vh;
+  margin-top: -4vh;
 
 }
 
 .main {
   margin-left: 30%;
   padding: 0px 10px;
+  height: 75vh;
 }
 
 .footer {
@@ -41,6 +41,7 @@ code {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  background-color: black;
 
 }
 
@@ -83,4 +84,17 @@ code {
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   font-size: 3vw;
+}
+
+.footer-text {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2vw;
+}
+
+.pic-day {
+  border-style: solid;
+  border: blue;
+  border-width: 5px;
 }
