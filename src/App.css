@@ -33,6 +33,7 @@ code {
 
 .footer {
   bottom: 0;
+  
 }
 
 .footer-container {
@@ -40,10 +41,14 @@ code {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: black;
+  position:absolute;
 
 }
+
+
 
 .footer-size {
   width: 100%;
@@ -93,8 +98,7 @@ code {
   font-size: 2vw;
 }
 
-.pic-day {
-  border-style: solid;
-  border: blue;
-  border-width: 5px;
+div.pic-day {
+  border: 2px solid red;
+ 
 }

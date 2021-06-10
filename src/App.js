@@ -7,6 +7,8 @@ import Home from './Pages/home'
 import Music from './Components/MusicPanel'
 import Earth from './Pages/Earth';
 
+require('dotenv').config()
+
 function App() {
   return (
       <Router>
