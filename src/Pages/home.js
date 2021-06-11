@@ -42,6 +42,7 @@ class Home extends Component {
       console.log(image, title, explanation)
         return (
           <>
+          <div>
           <h1>Welcome</h1>
           <h3>Astronomy Photo of the Day</h3>
           <a href={this.state.image}>
@@ -49,8 +50,11 @@ class Home extends Component {
           </a>
       
             <p>{this.state.title}</p>
-            <p>{this.state.explanation}</p>
-
+            <p className='explText'>{this.state.explanation}</p>
+            </div>
+            <br>
+            </br>
+            <br></br>
 </>
        )
    }

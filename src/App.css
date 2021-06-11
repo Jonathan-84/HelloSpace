@@ -29,6 +29,7 @@ code {
   margin-left: 30%;
   padding: 0px 10px;
   height: 75vh;
+  overflow: auto;
 }
 
 .footer {
@@ -45,6 +46,7 @@ code {
   justify-content: space-around;
   background-color: black;
   position:absolute;
+  bottom:0;
 
 }
 
@@ -101,4 +103,8 @@ code {
 div.pic-day {
   border: 2px solid red;
  
+}
+
+.explText {
+  overflow: auto;
 }
