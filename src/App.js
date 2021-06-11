@@ -11,7 +11,7 @@ require('dotenv').config()
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router path="space">
         <>
           <Navbar />
           <div className='page-container'>
@@ -20,8 +20,8 @@ function App() {
           </div>
           <div className='main'>
           <Switch>
-         <Route exact path='/' component={Home}/>
-         <Route exact path='earth' component={Earth}/>
+         <Route exact path='/home' component={Home}/>
+         <Route exact path='/earth' component={Earth}/>
           {/*  <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
   <Route component={SearchBooks} />*/}

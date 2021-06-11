@@ -13,7 +13,7 @@ function Navbar(){
                   <h1 className="nav-text">Hello Space</h1>
                 <div className='nav-links'>
                 <ul >
-                <Link to="/" className="nav-text">Home</Link>
+                <Link to="/home" className="nav-text">Home</Link>
                         </ul>
                 
                 <ul>
