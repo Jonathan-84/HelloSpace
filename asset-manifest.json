@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/HelloSpace/static/css/main.291b9647.chunk.css",
+    "main.js": "/HelloSpace/static/js/main.b9faca3c.chunk.js",
+    "main.js.map": "/HelloSpace/static/js/main.b9faca3c.chunk.js.map",
+    "runtime-main.js": "/HelloSpace/static/js/runtime-main.a8dc5a14.js",
+    "runtime-main.js.map": "/HelloSpace/static/js/runtime-main.a8dc5a14.js.map",
+    "static/js/2.ba5265b9.chunk.js": "/HelloSpace/static/js/2.ba5265b9.chunk.js",
+    "static/js/2.ba5265b9.chunk.js.map": "/HelloSpace/static/js/2.ba5265b9.chunk.js.map",
+    "static/js/3.3f99f03c.chunk.js": "/HelloSpace/static/js/3.3f99f03c.chunk.js",
+    "static/js/3.3f99f03c.chunk.js.map": "/HelloSpace/static/js/3.3f99f03c.chunk.js.map",
+    "index.html": "/HelloSpace/index.html",
+    "static/css/main.291b9647.chunk.css.map": "/HelloSpace/static/css/main.291b9647.chunk.css.map",
+    "static/js/2.ba5265b9.chunk.js.LICENSE.txt": "/HelloSpace/static/js/2.ba5265b9.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/HelloSpace/static/media/dims.7089e1f3.7089e1f3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8dc5a14.js",
+    "static/js/2.ba5265b9.chunk.js",
+    "static/css/main.291b9647.chunk.css",
+    "static/js/main.b9faca3c.chunk.js"
+  ]
+}
