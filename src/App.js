@@ -11,7 +11,7 @@ require('dotenv').config()
 
 function App() {
   return (
-      <Router history={history} basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
         <>
           <Navbar />
           <div className='page-container'>
@@ -21,7 +21,7 @@ function App() {
           <div className='main'>
           <Switch>
          <Route exact path='/' component={Home}/>
-         <Route exact path='/earth' component={Earth}/>
+         <Route exact path='earth' component={Earth}/>
           {/*  <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
   <Route component={SearchBooks} />*/}
