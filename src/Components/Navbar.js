@@ -17,7 +17,7 @@ function Navbar(){
                         </ul>
                 
                 <ul>
-                <Link to="/Earth" className="nav-text">Earth</Link>
+                <Link to="/earth" className="nav-text">Earth</Link>
                 </ul>
                 </div>
                 </div>

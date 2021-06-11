@@ -11,7 +11,7 @@ require('dotenv').config()
 
 function App() {
   return (
-      <Router>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
         <>
           <Navbar />
           <div className='page-container'>
