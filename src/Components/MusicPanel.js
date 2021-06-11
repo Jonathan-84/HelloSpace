@@ -9,9 +9,9 @@ const Music = () => {
     return (
       <>
      
-      <p className="text-md-center text-sm-left m-3"> Will try to put SPotify music player here.
-        </p>
-
+        <iframe src="https://open.spotify.com/embed/playlist/792i0xmXcx6A9R3dYr3koO?theme=0" 
+        width="100%" height="450" frameBorder="0" allowtransparency="true" 
+        allow="encrypted-media" title="Spotify">Space Play List</iframe>
 
       </>
     );

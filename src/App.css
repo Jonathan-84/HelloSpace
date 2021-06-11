@@ -17,11 +17,11 @@ code {
 }
 
 .LeftPanel {
+
   width:30%;
   float: left;
   background-color: gray;
   height: 79vh;
-  margin-top: -4vh;
 
 }
 
