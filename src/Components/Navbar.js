@@ -1,3 +1,4 @@
+import { getByPlaceholderText } from '@testing-library/dom';
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
@@ -10,14 +11,19 @@ function Navbar(){
                 <div className='nav-container'>
                   <div className="header-image">
                     <div className='header-container'>
-                  <h1 className="nav-text">Hello Space</h1>
+                  <h2>
+                      <Link to="/" className="nav-text"> Hello Space</Link>
+                      </h2>
                 <div className='nav-links'>
                 <ul >
-                <Link to="/" className="nav-text">Home</Link>
+                <Link to="/" className="nav-text">Temp</Link>
                         </ul>
                 
                 <ul>
                 <Link to="/earth" className="nav-text">Earth</Link>
+                </ul>
+                <ul>
+                <Link to="/mars" className="nav-text">Mars</Link>
                 </ul>
                 </div>
                 </div>

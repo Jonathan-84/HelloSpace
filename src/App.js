@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import Home from './Pages/home'
 import Music from './Components/MusicPanel'
 import Earth from './Pages/Earth';
+import Mars from './Pages/Mars';
 
 require('dotenv').config()
 
@@ -22,6 +23,7 @@ function App() {
           <Switch>
          <Route exact path='/' component={Home}/>
          <Route exact path='/earth' component={Earth}/>
+         <Route exact path='/mars' component={Mars}/>
           {/*  <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
   <Route component={SearchBooks} />*/}
