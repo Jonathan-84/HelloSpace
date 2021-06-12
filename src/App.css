@@ -20,8 +20,9 @@ code {
 
   width:30%;
   float: left;
-  background-color: gray;
-  height: 79vh;
+  background-color: lightgrey;
+  height: 80vh;
+  overflow: auto;
 
 }
 
@@ -60,7 +61,7 @@ code {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: black;
+  background-color: gray;
   height: 20vh;
   position: sticky;
   
@@ -107,4 +108,10 @@ div.pic-day {
 
 .explText {
   overflow: auto;
+}
+
+/* Music Panel*/
+.music-color {
+  color:royalblue;
+  font-size: 3vh;
 }
