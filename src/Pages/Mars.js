@@ -7,18 +7,16 @@ import '../App.css';
     const today= moment().format("YYYY-MM-DD");
     console.log(today)
 
-   // figure best way to do this... maybe use a static image for Mars Headers...
 
-//full link https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${today}&api_key=${api_key}
-//https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${today}&camera=NAVCAM&api_key=${api_key}
+const APIurl = `https://api.nasa.gov/mars-photos/api/v1/rovers/Perseverance/latest_photos?api_key=${api_key}`;
 
-const APIurl = `https://api.nasa.gov/mars-photos/api/v1/rovers/perserverance/latest_photos?api_key=${api_key}`;
-
+console.log(APIurl)
 class Mars extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-          photos: [],
+          marspic: [],
+       
         
          
 
@@ -31,8 +29,8 @@ class Mars extends Component {
             .then(response => response.json())
             .then(response => {
                 this.setState({
-                    photos:response.img_src,
-                  
+                  marspic:response.latest_photos[0].img_src
+                 
                   
                 })
             })
@@ -40,16 +38,16 @@ class Mars extends Component {
   
     render() {
 
-
-      const { photos} = this.state;
-      console.log(photos)
+   const {marspic} = this.state;
+      console.log(marspic)
         return (
           <>
           <div>
           <h3>Mars</h3>
-          <a href={this.state.photos}>
-          <img  alt='random astronomy' src={this.state.photos}  height="300" width="500"/>
+          <a href={this.state.image}>
+          <img  alt='mars from perseverance' src={this.state.marspic}  height="300" width="500"/>
           </a>
+          <p>Perseverance's latest photo from Mars</p>
     
             </div>
             <br>
