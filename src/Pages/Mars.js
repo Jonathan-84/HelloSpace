@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import moment from 'moment';
+//import moment from 'moment';
 import '../App.css';
+import MarsWeather from '../Components/Mars/marsweather';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
     
-    const today= moment().format("YYYY-MM-DD");
-    console.log(today)
+   /* Hold over from old approach to current photos
+   const today= moment().format("YYYY-MM-DD");
+    console.log(today)*/
 
 
 const APIurl = `https://api.nasa.gov/mars-photos/api/v1/rovers/Perseverance/latest_photos?api_key=${api_key}`;
@@ -53,6 +55,8 @@ class Mars extends Component {
             <br>
             </br>
             <br></br>
+            <MarsWeather></MarsWeather>
+
 </>
        )
    }
