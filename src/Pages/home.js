@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
+import video from '../Assets/Images/video.png';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
     
@@ -16,6 +17,7 @@ class Home extends Component {
           image: [],
           title: [],
           explanation: [],
+          type: []
          
 
         };
@@ -30,14 +32,34 @@ class Home extends Component {
                     image:response.url,
                     title:response.title,
                     explanation:response.explanation,
+                    media: response.media_type
+
                   
                 })
             })
+            
     }
   
     render() {
-
-
+ 
+      let showMedia;
+      if (this.state.media="video") {
+        showMedia = (
+          <span>
+            <p>It's a video of the day! Click the icon to be redirected to it!</p>
+            <a href={this.state.image}>
+          <img  alt='random astronomy' src={video}  height="200" width="200"/>
+          </a>
+          
+          </span>
+        )
+      } else {
+        showMedia = (
+          <a href={this.state.image}>
+          <img  alt='random astronomy' src={this.state.image}  height="300" width="500"/>
+          </a>
+        )
+      }
       const { image, title, explanation} = this.state;
       console.log(image, title, explanation)
         return (
@@ -45,9 +67,7 @@ class Home extends Component {
           <div>
           <h1>Welcome</h1>
           <h3>Astronomy Photo of the Day</h3>
-          <a href={this.state.image}>
-          <img  alt='random astronomy' src={this.state.image}  height="300" width="500"/>
-          </a>
+          {showMedia}
       
             <p>{this.state.title}</p>
             <p className='explText'>{this.state.explanation}</p>
@@ -60,6 +80,8 @@ class Home extends Component {
    }
         }
 export default Home;
+
+//clean up afterwards, this was the original JSON pull
 /*
 The fetch itself works, and extracted JSON, fiddling with the format to better map the information and 
 use it below. Not to mention, this would better allow me to use 
