@@ -12,7 +12,6 @@ import MarsWeather from '../Components/Mars/marsweather';
 
 const APIurl = `https://api.nasa.gov/mars-photos/api/v1/rovers/Perseverance/latest_photos?api_key=${api_key}`;
 
-console.log(APIurl)
 class Mars extends Component {
     constructor(props) {
         super(props);

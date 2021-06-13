@@ -1,6 +1,8 @@
 import React from 'react';
 
-
+//insight API https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0
+const api_key= process.env.REACT_APP_GOVT_API_KEY;
+const APIurl = `https://api.nasa.gov/insight_weather/?api_key=${api_key}&feedtype=json&ver=1.0`;
 
 const MarsWeather = () => {
 
