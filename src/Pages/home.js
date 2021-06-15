@@ -43,7 +43,7 @@ class Home extends Component {
     render() {
  
       let showMedia;
-      if (this.state.media="video") {
+      if (this.state.media==="video") {
         showMedia = (
           <span>
             <p>It's a video of the day! Click the icon to be redirected to it!</p>
