@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 //import Moment from 'react-moment';
 import moment from 'moment';
+import EarthWeather from '../Earth/earthweather';
 
 
 const APIurl = 'https://api.maas2.apollorion.com/';
@@ -53,22 +54,39 @@ const APIurl = 'https://api.maas2.apollorion.com/';
       // converted Celsius to Fahre for Min
       const cTempMin= min;
       const toFarMin= cTempMin * 9 /5 +32;
-      console.log(toFarMin)
+     const farMin=toFarMin.toFixed(2)
 // converted Celsius to Fahr for Max (data comes in as Celsius)
       const  cTempMax= max;
       const toFarMax= cTempMax * 9/5 +32;
-      console.log(toFarMax)
+    
+   const farMax=toFarMax.toFixed(2)
 
     return (
       <>
       <h1 className="display-4 text-center border-bottom border-warning">MarsWeather</h1>
-      <p className="text-md-center text-sm-left m-3"> Check it out.
-        </p>
+      <table className="w3-table">
+<tr>
+  <th>Category</th>
+  <th>Mars</th>
+  <th>Earth
+  </th>
+</tr>
+<tr>
+  <td>Temp Low</td>
+  <td>{cTempMin} C / {farMin} F</td>
+  <td>Needs to add</td>
+</tr>
+<tr>
+  <td>Temp High</td>
+  <td>{cTempMax} C / {farMax} F</td>
+  <td>Needs to add</td>
+</tr>
+</table>
 
         <p>Date that weather data was last received: {fixedDate}</p>
 <br>
 </br>
-
+<EarthWeather></EarthWeather>
 <br>
 </br>
 <br></br>
