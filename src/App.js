@@ -24,6 +24,7 @@ function App() {
          <Route exact path='/' component={Home}/>
          <Route exact path='/earth' component={Earth}/>
          <Route exact path='/mars' component={Mars}/>
+         
           {/*  <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
   <Route component={SearchBooks} />*/}
