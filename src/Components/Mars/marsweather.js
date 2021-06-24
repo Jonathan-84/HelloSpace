@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 //import Moment from 'react-moment';
 import moment from 'moment';
-import EarthWeather from '../Earth/earthweather';
+
 
 
 const APIurl = 'https://api.maas2.apollorion.com/';
@@ -23,6 +23,8 @@ const APIurl = 'https://api.maas2.apollorion.com/';
       
     
         componentDidMount() {
+    
+
             fetch(APIurl)
                 .then(response => response.json())
                 .then(response => {
@@ -32,12 +34,27 @@ const APIurl = 'https://api.maas2.apollorion.com/';
                       max:response.max_temp
                     //  marspic:response.latest_photos[0].img_src
                      
-                      
+                
                     })
                 })
+                
         }
-   
+      
         render() {
+          // Brings in the earth minimum temp child
+          const earthLow= this.props.minEarth;
+          
+          // Converts to Fahrenheit
+          const eLowFar= earthLow * 9 /5 +32;
+          const efarMin=eLowFar.toFixed(2)
+
+           // Brings in the earth minimum temp child
+           const earthHi= this.props.maxEarth;
+
+           const eHiFar= earthHi * 9 /5 +32;
+           const efarMax=eHiFar.toFixed(2)
+          
+
           const {date,max, min} = this.state;
       console.log(max, min)
 
@@ -48,9 +65,9 @@ const APIurl = 'https://api.maas2.apollorion.com/';
       console.log (fixedDate)
     
       
-// Need to trim and reformat date
+////////////////////////////////////
 
-
+//MARS
       // converted Celsius to Fahre for Min
       const cTempMin= min;
       const toFarMin= cTempMin * 9 /5 +32;
@@ -60,7 +77,7 @@ const APIurl = 'https://api.maas2.apollorion.com/';
       const toFarMax= cTempMax * 9/5 +32;
     
    const farMax=toFarMax.toFixed(2)
-
+////////////////////////////////////////
     return (
       <>
       <h1 className="display-4 text-center border-bottom border-warning">MarsWeather</h1>
@@ -74,19 +91,18 @@ const APIurl = 'https://api.maas2.apollorion.com/';
 <tr>
   <td>Temp Low</td>
   <td>{cTempMin} C / {farMin} F</td>
-  <td>Needs to add</td>
+  <td>  {earthLow} C/ {efarMin} F</td>
 </tr>
 <tr>
   <td>Temp High</td>
   <td>{cTempMax} C / {farMax} F</td>
-  <td>Needs to add</td>
+  <td>{earthHi} C/ {efarMax}</td>
 </tr>
 </table>
 
         <p>Date that weather data was last received: {fixedDate}</p>
 <br>
 </br>
-<EarthWeather></EarthWeather>
 <br>
 </br>
 <br></br>

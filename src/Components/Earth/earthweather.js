@@ -1,5 +1,6 @@
 
 import React, { Component } from "react";
+import MarsWeather from "../Mars/marsweather";
 
  
 
@@ -41,7 +42,7 @@ import React, { Component } from "react";
 
           /// api.openweathermap.org/data/2.5/weather?lat={position.coords.latitude}&lon={position.coords.longitude}&appid={API key}
     const ow_api= process.env.REACT_APP_OPEN_WEATHER;
-const owUrl= `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${ow_api}&units=imperial`;
+const owUrl= `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${ow_api}&units=metric`;
 console.log(owUrl)
             fetch(owUrl)
                 .then(response => response.json())
@@ -60,20 +61,14 @@ console.log(owUrl)
        
 
         render() {
-          const {minEarth, maxEarth} = this.state;
+        // const {minEarth, maxEarth} = this.state;
+        // console.log(minEarth, maxEarth)
     
     return (
-      <>
-      <h1 className="display-4 text-center border-bottom border-warning">EarthWeather</h1>
-      <p className="text-md-center text-sm-left m-3"> Check it out. {minEarth} F   High {maxEarth}F
-        </p>
-   
-<br>
-</br>
-<br>
-</br>
-<br></br>
-      </>
+      
+        <MarsWeather {...this.state}></MarsWeather>
+  
+      
     );
   }; 
 }
