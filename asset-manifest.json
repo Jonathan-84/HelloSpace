@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/HelloSpace/static/css/main.1e53b19a.chunk.css",
-    "main.js": "/HelloSpace/static/js/main.9fa6aad6.chunk.js",
-    "main.js.map": "/HelloSpace/static/js/main.9fa6aad6.chunk.js.map",
-    "runtime-main.js": "/HelloSpace/static/js/runtime-main.a8dc5a14.js",
-    "runtime-main.js.map": "/HelloSpace/static/js/runtime-main.a8dc5a14.js.map",
-    "static/js/2.ba5265b9.chunk.js": "/HelloSpace/static/js/2.ba5265b9.chunk.js",
-    "static/js/2.ba5265b9.chunk.js.map": "/HelloSpace/static/js/2.ba5265b9.chunk.js.map",
-    "static/js/3.3f99f03c.chunk.js": "/HelloSpace/static/js/3.3f99f03c.chunk.js",
-    "static/js/3.3f99f03c.chunk.js.map": "/HelloSpace/static/js/3.3f99f03c.chunk.js.map",
+    "main.css": "/HelloSpace/static/css/main.bc67efce.chunk.css",
+    "main.js": "/HelloSpace/static/js/main.1f041da4.chunk.js",
+    "main.js.map": "/HelloSpace/static/js/main.1f041da4.chunk.js.map",
+    "runtime-main.js": "/HelloSpace/static/js/runtime-main.df43dd7d.js",
+    "runtime-main.js.map": "/HelloSpace/static/js/runtime-main.df43dd7d.js.map",
+    "static/js/2.c5456fc1.chunk.js": "/HelloSpace/static/js/2.c5456fc1.chunk.js",
+    "static/js/2.c5456fc1.chunk.js.map": "/HelloSpace/static/js/2.c5456fc1.chunk.js.map",
+    "static/js/3.770fdae5.chunk.js": "/HelloSpace/static/js/3.770fdae5.chunk.js",
+    "static/js/3.770fdae5.chunk.js.map": "/HelloSpace/static/js/3.770fdae5.chunk.js.map",
     "index.html": "/HelloSpace/index.html",
-    "static/css/main.1e53b19a.chunk.css.map": "/HelloSpace/static/css/main.1e53b19a.chunk.css.map",
-    "static/js/2.ba5265b9.chunk.js.LICENSE.txt": "/HelloSpace/static/js/2.ba5265b9.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/HelloSpace/static/media/dims.7089e1f3.7089e1f3.jpg"
+    "static/css/main.bc67efce.chunk.css.map": "/HelloSpace/static/css/main.bc67efce.chunk.css.map",
+    "static/js/2.c5456fc1.chunk.js.LICENSE.txt": "/HelloSpace/static/js/2.c5456fc1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/HelloSpace/static/media/dims.7089e1f3.7089e1f3.jpg",
+    "static/media/video.c150e9f1.png": "/HelloSpace/static/media/video.c150e9f1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8dc5a14.js",
-    "static/js/2.ba5265b9.chunk.js",
-    "static/css/main.1e53b19a.chunk.css",
-    "static/js/main.9fa6aad6.chunk.js"
+    "static/js/runtime-main.df43dd7d.js",
+    "static/js/2.c5456fc1.chunk.js",
+    "static/css/main.bc67efce.chunk.css",
+    "static/js/main.1f041da4.chunk.js"
   ]
 }
