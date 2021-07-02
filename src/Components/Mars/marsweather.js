@@ -12,7 +12,10 @@ const APIurl = 'https://api.maas2.apollorion.com/';
             this.state = { 
               date:[],
               min:[],
-              max:[]
+              max:[], 
+              overall:[], 
+              wind:[], 
+              pressure:[]
             //  marsweather: [],
            
             
@@ -31,7 +34,10 @@ const APIurl = 'https://api.maas2.apollorion.com/';
                     this.setState({
                       date:response.terrestrial_date,
                       min:response.min_temp,
-                      max:response.max_temp
+                      max:response.max_temp,
+                      overall: response.atmo_opacity,
+                      wind: response.wind_speed,
+                      pressure: response.pressure
                     //  marspic:response.latest_photos[0].img_src
                      
                 
@@ -53,11 +59,54 @@ const APIurl = 'https://api.maas2.apollorion.com/';
 
            const eHiFar= earthHi * 9 /5 +32;
            const efarMax=eHiFar.toFixed(2)
+
+            // Brings in the earth press temp child
+          const earthPress= this.props.earthPressure;
+
+           // Brings in the earth wind to child
+           const eWind= this.props.earthWind;
+
+            // Brings in the earth press temp child
+          const earthMain= this.props.condition;
+
+          // Brings in the earth icon and set it for rendering
+          const eIcon= this.props.icon;
+          const iconUrl= `http://openweathermap.org/img/wn/${eIcon}@2x.png`
+          
+          
           
 
-          const {date,max, min} = this.state;
-      console.log(max, min)
+      const {date,max, min, overall, wind, pressure} = this.state;
 
+      
+      // The wind speeds which the rover hasn't been getting, really stands out, this adds text
+      let marsWinds;
+      if 
+      (wind === null) {
+        marsWinds = (
+        <p  className='table-horizontal table-column-left table-header-text'>No data</p>
+        )
+      }
+      else{
+        marsWinds=(
+          <td className=" table-horizontal table-column-left">{wind} </td>
+       )
+      }
+/// If/else allows me to adjust overall Icon (using OpenWeather API Icons- I've only seen sunny so far)
+      let marsIcon;
+      if
+      (overall === "Sunny") {
+        marsIcon=(
+        <td className=" table-horizontal table-column-left">{overall}<span><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="icon for weather"></img></span> </td>
+        )
+      }
+      else {
+marsIcon=(
+  <td className="table-horizontal table-column-left">{overall} </td>
+)
+      }
+
+      
       
       const stDate = date;
       const fixedDate= moment(stDate).format('MMMM Do YYYY')
@@ -80,27 +129,44 @@ const APIurl = 'https://api.maas2.apollorion.com/';
 ////////////////////////////////////////
     return (
       <>
-      <h1 className="display-4 text-center border-bottom border-warning">MarsWeather</h1>
-      <table className="w3-table">
-<tr>
-  <th>Category</th>
-  <th>Mars</th>
-  <th>Earth
-  </th>
+      <h1 className="title">Mars Weather</h1>
+      <p className='subtitle'> Data was from Mars Curiosity Rover (Rover Environmental Monitoring Station)</p>
+      <div className='w3-responsive'>
+      <table className="w3-table-all table-header-text">
+<tr >
+  <th className=" w3-center table-header-text">Category</th>
+  <th className=" w3-center table-column-left table-header-text">Mars</th>
+  <th className=" w3-center table-column-left table-header-text">Earth (Your City)</th>
 </tr>
 <tr>
-  <td>Temp Low</td>
-  <td>{cTempMin} C / {farMin} F</td>
-  <td>  {earthLow} C/ {efarMin} F</td>
+  <td className="table-horizontal">Temp Low</td>
+  <td className=" table-horizontal table-column-left">{cTempMin} C / {farMin} F</td>
+  <td className=" table-horizontal table-column-left">  {earthLow} C/ {efarMin} F</td>
 </tr>
 <tr>
-  <td>Temp High</td>
-  <td>{cTempMax} C / {farMax} F</td>
-  <td>{earthHi} C/ {efarMax}</td>
+  <td className="table-horizontal">Temp High</td>
+  <td className=" table-horizontal table-column-left">{cTempMax} C / {farMax} F</td>
+  <td className=" table-horizontal table-column-left">{earthHi} C/ {efarMax} F</td>
+</tr>
+<tr>
+  <td className="table-horizontal">Atmospheric Pressure</td>
+  <td className="table-horizontal  table-column-left">{pressure}</td>
+  <td className=" table-horizontal table-column-left">{ earthPress}</td>
+</tr>
+<tr>
+  <td className="table-horizontal">Wind</td>
+  {marsWinds}
+  <td className=" table-horizontal table-column-left">{eWind} </td>
+</tr>
+<tr >
+  <td className="table-horizontal">Overall Condition</td>
+  {marsIcon}
+  <td className=" table-horizontal table-column-left">{earthMain}<span><img src={iconUrl} alt="icon for weather"></img></span> </td>
 </tr>
 </table>
+</div>
 
-        <p>Date that weather data was last received: {fixedDate}</p>
+        <p>Date that Mar's weather data was last received: {fixedDate}</p>
 <br>
 </br>
 <br>

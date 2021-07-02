@@ -28,7 +28,6 @@ class Music extends Component {
 
   render() {
 
-
     return (
       <>
       <br></br>
@@ -36,8 +35,8 @@ class Music extends Component {
         <label className= 'music-color'>  Space Radio </label>
           <select value={this.state.value} onChange={this.handleChange} className="music-color">
           <option value="https://open.spotify.com/embed/playlist/792i0xmXcx6A9R3dYr3koO?theme=0">Listen In Space</option>
-            <option value='https://open.spotify.com/embed/album/5qdsq5YryqAynT65vpaumI'>Space Jam</option>
-            <option value="60">2 Months</option>
+            <option value="https://open.spotify.com/embed/episode/2RHNMVBEJ91SMisVu6NoPD">Star Talk</option>
+            <option value="https://open.spotify.com/embed/playlist/6pcuzwZSIw7OgL149bgJmZ">Voyager Golden Record</option>
             <option value="90">3 Months</option>
             <option value="180">6 Months</option>
             <option value="270">9 Months</option>

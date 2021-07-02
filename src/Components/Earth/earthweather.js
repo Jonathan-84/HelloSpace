@@ -22,7 +22,11 @@ import MarsWeather from "../Mars/marsweather";
             this.state = { 
     
     minEarth:[],
-    maxEarth: []
+    maxEarth: [],
+    condition: [],
+    earthWind: [],
+    icon:[],
+    pressure:[]
             //  marsweather: [],
            
             
@@ -35,6 +39,8 @@ import MarsWeather from "../Mars/marsweather";
     
         // need to get the query to show up in the URL fetch
         componentDidMount() {
+
+          
           navigator.geolocation.getCurrentPosition((position) => {
            const lat = position.coords.latitude;
            const long= position.coords.longitude;
@@ -50,19 +56,22 @@ console.log(owUrl)
                     this.setState({
                   
                  minEarth:response.main.temp_min,
-                 maxEarth: response.main.temp_max
+                 maxEarth: response.main.temp_max,
+                 earthPressure: response.main.pressure,
+                 condition: response.weather[0].main,
+                 icon: response.weather[0].icon,
+                 earthWind:response.wind.speed
                      
                       
-                    })
+                          
                 })
-              });
-        }
-      
-       
+              })
+            });
+      }
 
         render() {
-        // const {minEarth, maxEarth} = this.state;
-        // console.log(minEarth, maxEarth)
+        const {minEarth, maxEarth, condition, earthWind, pressure} = this.state;
+         console.log(minEarth, maxEarth, condition,earthWind, pressure)
     
     return (
       

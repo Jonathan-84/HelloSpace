@@ -115,3 +115,29 @@ div.pic-day {
   color:royalblue;
   font-size: 3vh;
 }
+
+.table-header-text {
+  font-weight: bold;
+  color: white ;
+  background-color: orangered;
+  text-align: center;
+}
+
+.w3-table-all {
+  border: 2px solid white;
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 2em;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+table, tr, th, td {
+  border: 2px solid white;
+}
