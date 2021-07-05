@@ -136,7 +136,7 @@ marsIcon=(
 <tr >
   <th className=" w3-center table-header-text">Category</th>
   <th className=" w3-center table-column-left table-header-text">Mars</th>
-  <th className=" w3-center table-column-left table-header-text">Earth (Your City)</th>
+  <th className=" w3-center table-column-left table-header-text">Earth (NYC)</th>
 </tr>
 <tr>
   <td className="table-horizontal">Temp Low</td>

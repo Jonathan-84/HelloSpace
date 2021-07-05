@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 //import moment from 'moment';
 import '../App.css';
-import EarthWeather from '../Components/Earth/earthweather';
+import CitySearch from '../Components/Earth/citySearch';
+//import EarthWeather from '../Components/Earth/earthweather';
 //import MarsWeather from '../Components/Mars/marsweather';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
@@ -55,7 +56,7 @@ class Mars extends Component {
             <br>
             </br>
             <br></br>
-            <EarthWeather></EarthWeather>
+            <CitySearch></CitySearch>
 
 </>
        )
