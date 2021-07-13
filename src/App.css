@@ -141,3 +141,21 @@ div.pic-day {
 table, tr, th, td {
   border: 2px solid white;
 }
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-width: 575px) {
+  .LeftPanel {
+   visibility: hidden;
+   width:0%;
+   height: 0%;
+
+  }
+
+  .main {
+    width:100%;
+    margin-left: 0%;
+    
+  }
+
+}
+

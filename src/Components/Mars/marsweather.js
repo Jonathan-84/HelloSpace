@@ -130,13 +130,13 @@ marsIcon=(
     return (
       <>
       <h1 className="title">Mars Weather</h1>
-      <p className='subtitle'> Data was from Mars Curiosity Rover (Rover Environmental Monitoring Station)</p>
+      <p className='subtitle'> Mars Data is from the Curiosity Rover (Rover Environmental Monitoring Station)</p>
       <div className='w3-responsive'>
       <table className="w3-table-all table-header-text">
 <tr >
   <th className=" w3-center table-header-text">Category</th>
   <th className=" w3-center table-column-left table-header-text">Mars</th>
-  <th className=" w3-center table-column-left table-header-text">Earth (NYC)</th>
+  <th className=" w3-center table-column-left table-header-text">Earth (NYC*)</th>
 </tr>
 <tr>
   <td className="table-horizontal">Temp Low</td>
@@ -167,8 +167,10 @@ marsIcon=(
 </div>
 
         <p>Date that Mar's weather data was last received: {fixedDate}</p>
+        <p>* Future adjustments will use html Geolocation to present your local weather conditions in the NYC slot.</p>
 <br>
 </br>
+
 <br>
 </br>
 <br></br>

@@ -7,9 +7,9 @@ import EarthWeather from "../Earth/earthweather";
    
   //take the value from this then prop this ito marsweather to dispkay in table
   /*
+  Temporarily use the below gelocation... NYC is coming up as location since the state doesn't reset
   */
-  // address formula --- need to use current weather
-  //"https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=184b90f195e0b6670ef9fee34b9291e1"
+  
   
   
   
@@ -19,39 +19,46 @@ import EarthWeather from "../Earth/earthweather";
            constructor(props) {
               super(props);
               this.state = { 
-                lat:"40.71",
-              long:"-74.00",
+                lat: [0],
+          long: [0]
               };
           }
           
-        
+          // need to get the child component to update when the parent state changes
+          
+        componentDidMount(){
+          this.handleEvent()
+        }
       
           // need to get the query to show up in the URL fetch
-  //set state comes back as undefined, work on this           
-           componentDidMount() {
-                // Get location of user
-                const success = position => {
-                  const latitude = position.coords.latitude;
-                  const longitude = position.coords.longitude;
-                 // console.log(latitude, longitude);
-                  this.setState({
-                    lat: latitude,
-                    long: longitude
-                  });
-                };
-              
-                const error = () => {
-                  this.setState({
-                    lat: 40.71,
-                    long: -74.00
-                  });
-                 alert("Unable to retrieve your location, so here's NY City's Comparison")
-                
-                };
-              
-                navigator.geolocation.getCurrentPosition(success, error);
-              }
-              
+  //set state comes back as undefined, work on this        
+  
+  handleEvent = event => {
+
+      // Get location of user
+      const success = position => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+       // console.log(latitude, longitude);
+        this.setState({
+          lat: latitude,
+          long: longitude
+        });
+      };
+    
+      const error = () => {
+        this.setState({
+          lat: 40.71,
+          long: -74.00
+        });
+       alert("Unable to retrieve your location, so here's NY City's Comparison")
+      
+      };
+    
+      navigator.geolocation.getCurrentPosition(success, error);
+
+  };
+        
               
               /*if ("geolocation" in navigator) {
 
@@ -81,9 +88,11 @@ import EarthWeather from "../Earth/earthweather";
             console.log(lat,long)
       
       return (
-        
-          <EarthWeather {...this.state}></EarthWeather>
-    
+        <>
+      {/*} In Future will fix re-rendering that allows working geolocation for local weather
+        <button onClick={this.props.handleEvent}>Click on me</button>*/}
+          <EarthWeather lat={this.state.lat} long={this.state.long}></EarthWeather>
+    </>
         
       );
     }; 

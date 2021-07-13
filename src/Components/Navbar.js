@@ -14,11 +14,11 @@ function Navbar(){
                       <Link to="/" className="nav-text"> Hello Space</Link>
                       </h2>
                 <div className='nav-links'>
-                <ul >
+       {/*      <ul >
                 <Link to="/" className="nav-text">Temp</Link>
-                        </ul>
+                        </ul>*/}
                 
-                <ul>
+       <ul>
                 <Link to="/earth" className="nav-text">Earth</Link>
                 </ul>
                 <ul>
