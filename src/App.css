@@ -20,7 +20,7 @@ code {
 
   width:30%;
   float: left;
-  background-color: lightgrey;
+  background-color: #403d39;
   height: 80vh;
   overflow: auto;
 
@@ -112,7 +112,8 @@ div.pic-day {
 
 /* Music Panel*/
 .music-color {
-  color:royalblue;
+  color:#eb5e28;
+  font-weight: bold;
   font-size: 3vh;
 }
 
@@ -155,6 +156,39 @@ table, tr, th, td {
     width:100%;
     margin-left: 0%;
     
+  }
+  .footer-text {
+    font-size: 5vw;
+  }
+
+  .nav-text {
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .LeftPanel {
+   width:34%;
+
+  }
+
+  .main {
+    width:66%;
+    margin-left: 0%;
+  }
+
+  .music-color {
+    color:#eb5e28;
+    font-weight: bold;
+    font-size: 2vh;
+  }
+  .footer-text {
+    font-size: 5vw;
+  }
+
+  .nav-text {
+    font-size: 5vw;
   }
 
 }

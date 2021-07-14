@@ -1,6 +1,6 @@
 import React from 'react';
 //import Navbar from 'react-bootstrap/Navbar'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 // Will add in the future
 function Footer() {
@@ -11,10 +11,10 @@ function Footer() {
     <div className="footer-container" >  
 
 <ul>
-    <Link className='footer-text' href="https://github.com/Jonathan-84" target="_blank">GitHub</Link>
+    <a className='footer-text' href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer'>GitHub</a>
  </ul>
  <ul>
-    <Link className='footer-text' href="https://www.linkedin.com/company/exley-deadlines" target="_blank">LinkedIn</Link>
+    <a className='footer-text' href="https://www.linkedin.com/in/jrob84" target="_blank" rel='noreferrer'>LinkedIn</a>
     </ul>
 </div>
 </div>
