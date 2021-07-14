@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/HelloSpace/static/css/main.006482d8.chunk.css",
-    "main.js": "/HelloSpace/static/js/main.508f777b.chunk.js",
-    "main.js.map": "/HelloSpace/static/js/main.508f777b.chunk.js.map",
+    "main.css": "/HelloSpace/static/css/main.93cc4fae.chunk.css",
+    "main.js": "/HelloSpace/static/js/main.069eab2f.chunk.js",
+    "main.js.map": "/HelloSpace/static/js/main.069eab2f.chunk.js.map",
     "runtime-main.js": "/HelloSpace/static/js/runtime-main.df43dd7d.js",
     "runtime-main.js.map": "/HelloSpace/static/js/runtime-main.df43dd7d.js.map",
     "static/js/2.1d2d1099.chunk.js": "/HelloSpace/static/js/2.1d2d1099.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.770fdae5.chunk.js": "/HelloSpace/static/js/3.770fdae5.chunk.js",
     "static/js/3.770fdae5.chunk.js.map": "/HelloSpace/static/js/3.770fdae5.chunk.js.map",
     "index.html": "/HelloSpace/index.html",
-    "static/css/main.006482d8.chunk.css.map": "/HelloSpace/static/css/main.006482d8.chunk.css.map",
+    "static/css/main.93cc4fae.chunk.css.map": "/HelloSpace/static/css/main.93cc4fae.chunk.css.map",
     "static/js/2.1d2d1099.chunk.js.LICENSE.txt": "/HelloSpace/static/js/2.1d2d1099.chunk.js.LICENSE.txt",
     "static/media/App.css": "/HelloSpace/static/media/dims.7089e1f3.7089e1f3.jpg",
     "static/media/video.c150e9f1.png": "/HelloSpace/static/media/video.c150e9f1.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.df43dd7d.js",
     "static/js/2.1d2d1099.chunk.js",
-    "static/css/main.006482d8.chunk.css",
-    "static/js/main.508f777b.chunk.js"
+    "static/css/main.93cc4fae.chunk.css",
+    "static/js/main.069eab2f.chunk.js"
   ]
 }
