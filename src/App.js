@@ -19,7 +19,7 @@ function App() {
           <div className='LeftPanel'>
           <Music/>
           </div>
-          <div className='main'>
+          <div className='main body-text'>
           <Switch>
          <Route exact path='/' component={Home}/>
          <Route exact path='/earth' component={Earth}/>
