@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import moment from 'moment';
-import NearEarth from '../Components/Earth/nearEarth';
+//import NearEarth from '../Components/Earth/nearEarth';
 
 const api_key= process.env.REACT_APP_GOVT_API_KEY;
 const ePhotoAPI = `https://api.nasa.gov/EPIC/api/natural/images?api_key=${api_key}`
@@ -74,7 +74,7 @@ const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/12/png
           <br></br>
           <br></br>
           <br></br>
-          <NearEarth></NearEarth>
+    {/*      <NearEarth></NearEarth>*/}
 
       </>
     );

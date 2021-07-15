@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar.js'
 import Footer from './Components/Footer'
@@ -12,7 +12,7 @@ require('dotenv').config()
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
         <>
           <Navbar />
           <div className='page-container'>
@@ -21,9 +21,9 @@ function App() {
           </div>
           <div className='main body-text'>
           <Switch>
-         <Route exact path= {process.env.PUBLIC_URL +'/'} component={Home}/>
-         <Route exact path= {process.env.PUBLIC_URL + '/earth'} component={Earth}/>
-         <Route exact path= {process.env.PUBLIC_URL +'/mars'} component={Mars}/>
+         <Route exact path= {'/'} component={Home}/>
+         <Route exact path= {'/earth'} component={Earth}/>
+         <Route exact path= {'/mars'} component={Mars}/>
          
           {/*  <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
@@ -36,7 +36,7 @@ function App() {
           </div>
   
         </>
-      </Router>
+      </HashRouter>
 
     );
 }
