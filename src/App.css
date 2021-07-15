@@ -21,7 +21,7 @@ code {
   width:30%;
   float: left;
   background-color: #403d39;
-  height: 80vh;
+  height: 100%;
   overflow: auto;
 
 }
@@ -31,7 +31,7 @@ code {
 }
 
 .main {
-  margin-left: 30%;
+  width:70%;
   padding: 0px 10px;
   height: 75vh;
   overflow: auto;
@@ -50,9 +50,8 @@ code {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: black;
-  position:absolute;
+  position:fixed;
   bottom:0;
-
 }
 
 
@@ -107,6 +106,8 @@ code {
 
 div.pic-day {
   border: 2px solid red;
+  width: 90%;
+  height: auto;
  
 }
 
@@ -148,11 +149,11 @@ table, tr, th, td {
 }
 
 /* #### Mobile Phones Landscape #### */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 680px) {
   .LeftPanel {
    visibility: hidden;
    width:0%;
-   height: 0%;
+   height: 100%;
    margin-left: 0%;
   padding: 0px 10px;
   }
@@ -160,7 +161,8 @@ table, tr, th, td {
 
   .main {
     width:100%;
-    margin-left: 0%;
+    margin-left: 0%;;
+    height: 100%
     
   }
   .footer-text {
@@ -175,17 +177,24 @@ table, tr, th, td {
     font-size: 3vw;
   }
 
+  .header-container{
+ padding-top: 70px;
+    
+  }
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1060px) {
   .LeftPanel {
-   width:34%;
+   width:35%;
+   height: 100%;
 
   }
 
   .main {
-    width:66%;
+    width:65%;
     margin-left: 0%;
+    height: 100%
   }
 
   .music-color {
@@ -194,11 +203,11 @@ table, tr, th, td {
     font-size: 2vh;
   }
   .footer-text {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .nav-text {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
 }

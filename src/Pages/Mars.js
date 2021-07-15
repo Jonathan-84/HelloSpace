@@ -46,9 +46,9 @@ class Mars extends Component {
         return (
           <>
           <div>
-          <h3>Mars</h3>
+          <h1 className='title'>Mars</h1>
           <a href={this.state.image}>
-          <img  alt='mars from perseverance' src={this.state.marspic}  height="300" width="500"/>
+          <img  alt='mars from perseverance' src={this.state.marspic}  height="300" width="450"/>
           </a>
           <p>Perseverance's latest photo from Mars</p>
     

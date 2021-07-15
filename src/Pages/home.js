@@ -65,7 +65,7 @@ class Home extends Component {
         return (
           <>
           <div>
-          <h1>Welcome</h1>
+          <h1 className='title '>Welcome</h1>
           <h3>Astronomy Photo of the Day</h3>
           {showMedia}
       
