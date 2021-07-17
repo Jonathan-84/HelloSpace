@@ -53,7 +53,7 @@ class Earth extends Component {
 
     const date= earthDate
     const month= moment(date).format('MM')
-    const day= moment(date).format('DD') - 1
+    const day= moment(date).format('DD')
     const year=moment(date).format('YYYY')
     console.log(month,day,year)
 
@@ -67,7 +67,7 @@ const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}
       <>
       <h1 className="title ">Earth</h1>
         <a href={image}>
-          <img  alt="Earth from DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument." src={image}  height="500" width="500"/>
+          <img  alt="Earth from DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument." src={image}  className="planet-photo"/>
           </a>
           <p>{this.state.imageCaption} on {month}/{day}/{year}.</p>
 <p>Geographical coordinates that the satellite is looking at:  <br></br>Longitude: {lat} || Latitude: {long}</p>
