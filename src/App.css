@@ -149,7 +149,7 @@ table, tr, th, td {
 }
 
 /* #### Mobile Phones Landscape #### */
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 500px) and (max-width: 680px)  {
   .LeftPanel {
    visibility: hidden;
    width:0%;
@@ -178,18 +178,18 @@ table, tr, th, td {
   }
 
   .header-container{
- padding-top: 70px;
+ padding-top: 40px;
     
   }
 
 }
 
-@media screen and (min-width: 681px) and (max-width: 1060px) {
-  .LeftPanel {
+@media screen and (min-width: 860px) and (max-width: 1060px){
+  /*.LeftPanel {
    width:35%;
    height: 100%;
 
-  }
+  }*/
 
   .main {
     width:65%;
@@ -212,3 +212,12 @@ table, tr, th, td {
 
 }
 
+@media (orientation : portrait) {
+  .LeftPanel {
+    visibility: hidden;
+    width:0%;
+    height: 100%;
+    margin-left: 0%;
+   padding: 0px 10px;
+}
+}

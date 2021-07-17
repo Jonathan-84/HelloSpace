@@ -53,14 +53,14 @@ class Earth extends Component {
 
     const date= earthDate
     const month= moment(date).format('MM')
-    const day= moment(date).format('DD')
+    const day= moment(date).format('DD') - 1
     const year=moment(date).format('YYYY')
     console.log(month,day,year)
 
 const lat = imageLat;
 const long = imageLong;
 
-const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/12/png/${this.state.earthPic}.png`
+const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}/png/${this.state.earthPic}.png`
 
 
     return (
