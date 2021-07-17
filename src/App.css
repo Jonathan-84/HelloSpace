@@ -42,7 +42,6 @@ code {
 width: 90%;
 height: 90%;
 align-self: center;
-
 }
 .footer {
   bottom: 0;
@@ -111,12 +110,11 @@ align-self: center;
   font-size: 2vw;
 }
 
-div.pic-day {
+/*div.pic-day {
   border: 2px solid red;
-  width: 90%;
-  height: auto;
- 
-}
+  width: 10vw;
+  height: 10vh;
+}*/
 
 .explText {
   overflow: auto;
@@ -164,11 +162,14 @@ table, tr, th, td {
    margin-left: 0%;
    margin-right: 0px;
    padding-right: 0px;
-   
-
   padding: 0px 10px;
   }
 
+  .planet-photo {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    }
 
   .main {
     width:auto;
@@ -204,6 +205,11 @@ table, tr, th, td {
 
   }
 
+  .planet-photo {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    }
   .main {
     width:65%;
     margin-left: 5px;

@@ -19,8 +19,8 @@ import EarthWeather from "../Earth/earthweather";
            constructor(props) {
               super(props);
               this.state = { 
-                lat: [0],
-          long: [0]
+                lat: [40.71],
+          long: [-74.00]
               };
           }
           

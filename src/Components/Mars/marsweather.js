@@ -127,6 +127,17 @@ marsIcon=(
     
    const farMax=toFarMax.toFixed(2)
 ////////////////////////////////////////
+
+const lat=this.props.lat;
+const latNum=Number(lat);
+const cleanLat= latNum.toFixed(2)
+
+const long=this.props.long;
+const longNum=Number(long)
+const cleanLong=longNum.toFixed(2)
+
+console.log(cleanLat, cleanLong)
+
     return (
       <>
       <h1 className="title">Mars Weather</h1>
@@ -136,7 +147,7 @@ marsIcon=(
 <tr >
   <th className=" w3-center table-header-text">Category</th>
   <th className=" w3-center table-column-left table-header-text">Mars</th>
-  <th className=" w3-center table-column-left table-header-text">Earth (NYC*)</th>
+  <th className=" w3-center table-column-left table-header-text">Earth (NYC{/*Lat: {cleanLat} Long: {cleanLong} */}*)</th>
 </tr>
 <tr>
   <td className="table-horizontal">Temp Low</td>
@@ -167,7 +178,10 @@ marsIcon=(
 </div>
 
         <p>Date that Mar's weather data was last received: {fixedDate}</p>
-        <p>* Future adjustments will use html Geolocation to present your local weather conditions in the NYC slot.</p>
+        <p> For now the location is New York City from the Open Weather API, but this will be corrected to capture use your coordinates{/** If you browser doesn't support, or you don't accept HTML5 geolocation which captures your
+          Longitude and Latitude, New York City will be the place holder 
+    location.*/}
+        </p>
 <br>
 </br>
 

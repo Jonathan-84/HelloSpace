@@ -67,7 +67,7 @@ const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}
       <>
       <h1 className="title ">Earth</h1>
         <a href={image}>
-          <img  alt="Earth from DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument." src={image}  className="planet-photo"/>
+          <img  alt="Earth from DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument." src={image} className="planet-photo"/>
           </a>
           <p>{this.state.imageCaption} on {month}/{day}/{year}.</p>
 <p>Geographical coordinates that the satellite is looking at:  <br></br>Longitude: {lat} || Latitude: {long}</p>

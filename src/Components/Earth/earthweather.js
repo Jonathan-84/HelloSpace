@@ -72,7 +72,7 @@ console.log(owUrl)
     
     return (
       
-        <MarsWeather {...this.state}></MarsWeather>
+        <MarsWeather {...this.state} lat={this.props.lat} long={this.props.long}></MarsWeather>
   
       
     );
