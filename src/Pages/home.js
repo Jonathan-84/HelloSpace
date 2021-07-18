@@ -68,7 +68,7 @@ class Home extends Component {
           <h1 className='title '>Welcome</h1>
           <p className='explText'>Like many, I love NASA. It's more than a government agency, it's... possiblity, potential, wonder, humanity at its best
             and much more. This mini-project as been an opportunity to geek out and experiment for the first time (undoubtably
-            not the last time).
+            not the last time) with the NASA APIs.
           </p>
           <h3>Astronomy Photo of the Day</h3>
           {showMedia}

@@ -21,7 +21,7 @@ code {
   width:30%;
   float: left;
   background-color: #403d39;
-  height: 100%;
+  height: auto;
   overflow: auto;
   margin-right: 10px;
   padding-right: 5px;
@@ -42,6 +42,12 @@ code {
 width: 90%;
 height: 90%;
 align-self: center;
+}
+
+.earth-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 .footer {
   bottom: 0;
@@ -154,11 +160,50 @@ table, tr, th, td {
 }
 
 /* #### Mobile Phones Landscape #### */
-@media screen and (max-width: 680px)  {
+@media screen and (max-width: 680px) and (orientation: landscape)  {
+  .LeftPanel {
+   width:35%;
+   height: auto;
+   background-color: #403d39;
+   margin-left: 0%;
+   margin-right: 0px;
+   padding-right: 0px;
+  padding: 0px 10px;
+  }
+
+  .planet-photo {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    margin-left:5px ;
+    }
+
+  .main {
+    width:65%;
+    margin-left: 0%;
+    height: 100%
+    
+  }
+  .footer-text {
+    font-size: 4vw;
+  }
+
+  .nav-text {
+    font-size: 4vw;
+  }
+
+  .body-text{
+    font-size: 2vw;
+  }
+
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-width: 680px) and (orientation: portrait)  {
   .LeftPanel {
    visibility: hidden;
    width:0%;
-   height: 100%;
+   height: auto;
    margin-left: 0%;
    margin-right: 0px;
    padding-right: 0px;
@@ -195,11 +240,10 @@ table, tr, th, td {
   }
 
 }
-
 @media screen and (min-width: 700px) and (max-width: 1060px){
   .LeftPanel {
    width:33%;
-   height: 100%;
+   height: auto;
    margin-right: 0px;
    padding-right: 0px;
 

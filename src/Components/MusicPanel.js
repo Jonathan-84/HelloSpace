@@ -31,7 +31,7 @@ class Music extends Component {
     return (
       <>
       <br></br>
-      <form className=' row justify-content-around d-flex flex-column flex-lg-row align-content-center'>
+      <form className=' align-content-center'>
         <label className= 'music-color'>  Space Radio </label>
           <select value={this.state.value} onChange={this.handleChange} className="music-color">
           <option className="music-color" value="https://open.spotify.com/embed/playlist/792i0xmXcx6A9R3dYr3koO?theme=0">Listen In Space</option>
