@@ -240,12 +240,13 @@ table, tr, th, td {
   }
 
 }
-@media screen and (min-width: 700px) and (max-width: 1060px){
+@media screen and (min-width: 680px) and (max-width: 1060px) and (orientation: portrait){
   .LeftPanel {
    width:33%;
    height: auto;
    margin-right: 0px;
    padding-right: 0px;
+   margin-bottom: -65px;
 
   }
 
@@ -275,13 +276,36 @@ table, tr, th, td {
 
 }
 
-/*@media (orientation : portrait) {
+@media screen and (min-width: 680px) and (max-width: 1060px) and (orientation: landscape){
   .LeftPanel {
-    visibility: hidden;
-    width:0%;
-    height: 100%;
-    margin-left: 0%;
-   padding: 0px 10px;
-}
+   width:33%;
+   height: auto;
+   margin-right: 0px;
+   padding-right: 0px;
+  }
 
-}*/
+  .planet-photo {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    }
+  .main {
+    width:65%;
+    margin-left: 5px;
+    height: 100%
+  }
+
+  .music-color {
+    color:#eb5e28;
+    font-weight: bold;
+    font-size: 2vh;
+  }
+  .footer-text {
+    font-size: 4vw;
+  }
+
+  .nav-text {
+    font-size: 4vw;
+  }
+
+}
