@@ -3,12 +3,13 @@ import EarthWeather from "../Earth/earthweather";
   
    
   
-  
+  //Need to rewrite code- currently the state will change, get passed correctly to
+  //child component, but I need to re-run the API fetch at that time to use fallback location
+  //or user geolocation
    
-  //take the value from this then prop this ito marsweather to dispkay in table
-  /*
-  Temporarily use the below gelocation... NYC is coming up as location since the state doesn't reset
-  */
+// Fall back location is around NYC, USA. 
+
+//the Latitude and Longitude states get passed to Earthweather for use with Open Weather API
   
   
   
@@ -24,15 +25,11 @@ import EarthWeather from "../Earth/earthweather";
               };
           }
           
-          // need to get the child component to update when the parent state changes
-          
+         
         componentDidMount(){
           this.handleEvent()
         }
       
-          // need to get the query to show up in the URL fetch
-  //set state comes back as undefined, work on this        
-  
   handleEvent = event => {
 
       // Get location of user
@@ -59,29 +56,6 @@ import EarthWeather from "../Earth/earthweather";
 
   };
         
-              
-              /*if ("geolocation" in navigator) {
-
-
-
-
-                navigator.geolocation.getCurrentPosition(function(position) {
-                  this.setState({
-                 lat:position.coords.latitude,
-                 long: position.coords.longitude,
-                  })
-                });
-              } else {
-               alert("You browser does support Geolocation- See the comparison with NYC")
-              }
-            }
-*/
-      
-                    
-
-              
-        
-  
           render() {
          
             const {lat,long} = this.state;
@@ -102,7 +76,7 @@ import EarthWeather from "../Earth/earthweather";
   
 
 // Below code was for selecting their city, keeping it in case I go with that 
-// for browsers that do not let you use html geolocation
+// for browsers that do not let you use html geolocation in the future
 /*
 
 function CitySearch() {

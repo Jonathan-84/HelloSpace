@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 //import Moment from 'react-moment';
 
+/// Laid the ground works to use Near Earth Object Web Service API
+// This is currently not feeding into the functional app
+
 const api_key= process.env.REACT_APP_GOVT_API_KEY;
 const neoWs = `https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key=${api_key}`
 

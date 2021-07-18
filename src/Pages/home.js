@@ -4,9 +4,13 @@ import video from '../Assets/Images/video.png';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
     
+// this page can only be accessed by clicking the website title, 
+// maybe add button in future.
 
+//This page uses the NASA Picture of the Day API- it really is awesome, I've
+//gotten to see the amazing pictures/videos while building this
 
-//full link https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+//full API request link: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
 const APIurl = `https://api.nasa.gov/planetary/apod?api_key=${api_key}`;
 
@@ -41,7 +45,8 @@ class Home extends Component {
     }
   
     render() {
- 
+ // After Discovering that "Picture of the Day" could be a video, I needed to fix the ugly
+ // site that was a picture error on the webpage
       let showMedia;
       if (this.state.media==="video") {
         showMedia = (
@@ -85,42 +90,3 @@ class Home extends Component {
         }
 export default Home;
 
-//clean up afterwards, this was the original JSON pull
-/*
-The fetch itself works, and extracted JSON, fiddling with the format to better map the information and 
-use it below. Not to mention, this would better allow me to use 
-
-const baseUrl= 'https://api.nasa.gov/planetary/apod';
-  const api_key= process.env.REACT_APP_GOVT_API_KEY;
-
-
-  fetch(`${baseUrl}?api_key=${api_key}`)
-    .then(response => response.json())
-    .then(response => {
-  console.log (response.hdurl, response.explanation);
-
-     I believe the above link was the right one, need to find how to return the 
-      link-- ran into request issues, too many while testing state
-       console.log(response.originator.name)
-    })
-    .catch(err => {
-      console.log(err);
-    });
-
-    
-    return (
-      <>
-      <h1>Home</h1>
-      <p> NASA is the bees knees.
-        </p>
-        <div className="pic-day">
-          <p>Picture Goes Here</p>
-      
-        </div>
-
-
-      </>
-    );
-    }
-  export default Home;
-*/

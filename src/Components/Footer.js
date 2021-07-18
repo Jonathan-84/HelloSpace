@@ -1,6 +1,4 @@
 import React from 'react';
-//import Navbar from 'react-bootstrap/Navbar'
-//import { Link } from 'react-router-dom';
 
 // Will add in the future
 function Footer() {

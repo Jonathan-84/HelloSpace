@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 
 
-// Look into the ability to integrate the playe, rather than just the iframe. Iframe only gives sample of song,
-//want the ability to play on-going, that's the purpose of keeping it the sameo on left panel
+/* My original plan was to have the Spotify player stay and not refresh on the 
+left panel at all times, that required a full stack app, which I wanted to avoid
+this time. So instead, I followed the general idea of keeping a permenant left panel
+but used their iFrame and the ability to select options- changing their 
+addressess to update the iFrame
+*/
 
 class Music extends Component {
  

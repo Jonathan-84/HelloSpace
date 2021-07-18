@@ -2,16 +2,15 @@ import React, {Component} from 'react';
 //import moment from 'moment';
 import '../App.css';
 import CitySearch from '../Components/Earth/citySearch';
-//import EarthWeather from '../Components/Earth/earthweather';
-//import MarsWeather from '../Components/Mars/marsweather';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
     
-   /* Hold over from old approach to current photos
-   const today= moment().format("YYYY-MM-DD");
-    console.log(today)*/
+   // This is the main Mars page and specifically- the parent of the children Components.
+   // This page uses the NASA Mars Rover Photos API (specifically I've chosen Perserverance)
+   // took some digging, API documentation not updated, so easy to miss the latest rover
 
-
+   //This doesn't pass props to City Search, it just starts the Mars rendering process
+   // as props are passed through the other components.
 const APIurl = `https://api.nasa.gov/mars-photos/api/v1/rovers/Perseverance/latest_photos?api_key=${api_key}`;
 
 class Mars extends Component {

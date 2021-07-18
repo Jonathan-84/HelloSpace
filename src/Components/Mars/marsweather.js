@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 //import Moment from 'react-moment';
 import moment from 'moment';
 
+/* I could not use the Mars Insight API, unfortunately technical difficulties appeared
+to greatly limite readings (last data was December 2020), so I needed to use the old 
+Curiousity Rover API.
+
+Feeling that comparing the weather we know vs Mars makes it real, I've
+used conversions below so that everyone can see the Temperature compared
+to their local metric.
+*/
 
 
 const APIurl = 'https://api.maas2.apollorion.com/';
@@ -80,6 +88,7 @@ const APIurl = 'https://api.maas2.apollorion.com/';
 
       
       // The wind speeds which the rover hasn't been getting, really stands out, this adds text
+      // This was more for aesthetics
       let marsWinds;
       if 
       (wind === null) {
@@ -92,7 +101,8 @@ const APIurl = 'https://api.maas2.apollorion.com/';
           <td className=" table-horizontal table-column-left">{wind} </td>
        )
       }
-/// If/else allows me to adjust overall Icon (using OpenWeather API Icons- I've only seen sunny so far)
+/// this If/else allows me to adjust overall Icon using OpenWeather API Icons. 
+// (On Mars I've only seen sunny so far)- Again this is more for aesthetics
       let marsIcon;
       if
       (overall === "Sunny") {
@@ -106,8 +116,8 @@ marsIcon=(
 )
       }
 
-      
-      
+      // Used this process to convert the date to a more readable format 
+      // Sorry Europe, rest of the world, used the common format in the US. 
       const stDate = date;
       const fixedDate= moment(stDate).format('MMMM Do YYYY')
       //new Date(stDate)
@@ -127,7 +137,11 @@ marsIcon=(
     
    const farMax=toFarMax.toFixed(2)
 ////////////////////////////////////////
-
+// Used the below formula to convert the Longitude and Lattitude captured from
+// the working City Search components geolocation, to a more presentable format,
+// so the user could see the location feeding the weather API 
+// This is currently commented out in the chart, since the Geolocation isn't fully
+// functional and I'd like to avoid confusion
 const lat=this.props.lat;
 const latNum=Number(lat);
 const cleanLat= latNum.toFixed(2)
