@@ -1,6 +1,6 @@
 # 🚀 HelloSpace 🚀
 ## Description
-Using a play on development's common, <Hello World>, HelloSpace is meant to be a project that puts NASA's APIs on display. The content of this project is derived 100% from APIs and packaged up by me. Aside from an opportunity to Geek Out over NASA's findings, an opportunity to show NASA my love, this is also an opportunity to bring some of NASA's findings down to Earth (see the Mars vs Earth weather comparison).
+Using a play on development's common, Hello World, HelloSpace is meant to be a project that puts NASA's APIs on display. The content of this project is derived 100% from APIs and designed by me. Aside from an opportunity to Geek Out over NASA's findings, an opportunity to show NASA my love, this is also an opportunity to bring some of NASA's findings down to Earth (see the Mars vs Earth weather comparison).
   
 🛰 The story so far (the APIs used)
 OpenWeather API and the following NASA APIs:
@@ -13,9 +13,9 @@ Future APIs planned: Asteroid NeoWs and EONET
 
 Personal Goals for Project: 
   + I've been doing a lot full stack projects, so my intention was to practice front-end. 
-  + My projects have had only footer and header at fixed positions, I wanted to have a side panel that did not update.
+  + My projects have had only footer and header at fixed positions, I wanted to have a side panel that stayed fixed. 
   + I wanted to integrate Spotify API, realizing that I would then need to do a full stack app, I decided to just leverage an multi-option iFrame. 
-  + One of my biggest goals, design it 100% with Vanilla CSS instead of Bootstrap and Bulma which I've used a lot recently.
+  + One of my biggest goals, design it entirely with Vanilla CSS instead of Bootstrap and Bulma which I've used a lot recently.
   
 🌌 Planned improvements aside from API additions: 
   - Fix the Geolocation to show users local weather- instead of NYC
