@@ -32,7 +32,7 @@ Personal Goals for Project:
 ![Mobile Screen](https://raw.githubusercontent.com/Jonathan-84/HelloSpace/master/src/Assets/Images/HelloSpace%20Mobile.jpg)
 ![Tablet Screen- Landscape](https://raw.githubusercontent.com/Jonathan-84/HelloSpace/master/src/Assets/Images/HelloSpaceTableyLandscape.jpg)
   
-## Usage (#Usage)
+## Usage
 This is a web application that can be visited [here](https://jonathan-84.github.io/HelloSpace/#/). The design is simple and intuitive. There is little for you to do, aside from enjoy the beauty that NASA has uncovered. To return to the "Home Screen" click on the Hello Space. The Home Page has a photo from the APOD. Earth Page enables you to see a photo from the EPIC API. The Mars page not only provides a picture from the Rover, it also does a side by side comparison of the weather data. 
 
 ## Technologies
