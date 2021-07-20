@@ -15,7 +15,7 @@ Personal Goals for Project:
   + I've been doing a lot full stack projects, so my intention was to practice front-end. 
   + My projects have had only footer and header at fixed positions, I wanted to have a side panel that stayed fixed. 
   + I wanted to integrate Spotify API, realizing that I would then need to do a full stack app, I decided to just leverage an multi-option iFrame. 
-  + One of my biggest goals, design it entirely with Vanilla CSS instead of Bootstrap and Bulma which I've used a lot recently.
+  + One of my biggest goals, design it entirely with pure CSS instead of Bootstrap and Bulma which I've used a lot recently.
   
 🌌 Planned improvements aside from API additions: 
   - Fix the Geolocation to show users local weather- instead of NYC
