@@ -11,7 +11,7 @@ function Navbar(){
                   <div className="header-image">
                     <div className='header-container'>
                   <h2>
-                      <Link to={"/"} className="nav-text"> Hello Space</Link>
+                      <Link to={"/Home"} className="nav-text"> Hello Space</Link>
                       </h2>
                 <div className='nav-links'>
        {/*      <ul >

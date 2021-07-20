@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar.js'
 import Footer from './Components/Footer'
@@ -21,13 +21,11 @@ function App() {
           </div>
           <div className='main body-text'>
           <Switch>
-         <Route exact path= {'/'} component={Home}/>
+         <Route exact path= {'/home'} component={Home}/>
          <Route exact path= {'/earth'} component={Earth}/>
-         <Route exact path= {'/mars'} component={Mars}/>
-         
-          {/*  <Route exact path='/' component={SearchBooks} />
-            <Route exact path='/saved' component={SavedBooks} />
-  <Route component={SearchBooks} />*/}
+         <Route exact path= {'/mars'} component={Mars}/> 
+         <Route render={() => <Redirect to={'/home'} />} />
+
           </Switch>
           </div>
           </div>
