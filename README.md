@@ -6,7 +6,7 @@ Using a play on development's common, Hello World, HelloSpace is meant to be a p
 OpenWeather API and the following NASA APIs:
 APOD (Astronomy Picture of the Day)
 EPIC (Earth Polychromatic Imaging Camera)
-MAAS2 (Mars weather, not NASA actually run)
+MAAS2 (Mars weather, technically not managed by NASA)
 Mars Rover Photos
 
 Future APIs planned: Asteroid NeoWs and EONET
