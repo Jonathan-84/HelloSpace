@@ -23,8 +23,6 @@ code {
   background-color: #403d39;
   height: auto;
   overflow: auto;
-  margin-right: 10px;
-  padding-right: 5px;
 
 }
 
@@ -32,23 +30,31 @@ code {
   display: flex;
 }
 
+
 .main {
+  display: flex ;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
   width:70%;
-  height: 75vh;
   overflow: auto;
 }
 
 .planet-photo {
-width: 90%;
-height: 90%;
-align-self: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  flex-grow: 1;
+
 }
 
 .earth-photo {
   width: 100%;
   max-width: 400px;
   height: auto;
+  flex-grow: 1;
 }
+
 .footer {
   bottom: 0;
   
@@ -66,6 +72,9 @@ align-self: center;
   bottom:0;
 }
 
+.title {
+  text-align: center;
+}
 
 
 .footer-size {
@@ -123,7 +132,8 @@ align-self: center;
 }*/
 
 .explText {
-  overflow: auto;
+  text-align: center;
+  width: 90%;
 }
 
 /* Music Panel*/
@@ -147,13 +157,7 @@ align-self: center;
   line-height: 2em;
 }
 
-.title {
-  text-align: center;
-}
 
-.subtitle {
-  text-align: center;
-}
 
 table, tr, th, td {
   border: 2px solid white;
@@ -166,21 +170,16 @@ table, tr, th, td {
    height: auto;
    background-color: #403d39;
    margin-left: 0%;
-   margin-right: 0px;
-   padding-right: 0px;
   padding: 0px 10px;
   }
 
   .planet-photo {
     width: 90%;
     height: 90%;
-    align-self: center;
-    margin-left:5px ;
-    }
+  }
 
   .main {
     width:65%;
-    margin-left: 0%;
     height: 100%
     
   }
@@ -205,20 +204,16 @@ table, tr, th, td {
    width:0%;
    height: auto;
    margin-left: 0%;
-   margin-right: 0px;
-   padding-right: 0px;
   padding: 0px 10px;
   }
 
   .planet-photo {
     width: 90%;
     height: 90%;
-    align-self: center;
     }
 
   .main {
     width:auto;
-    margin-left: 0%;
     height: 100%
     
   }
@@ -244,8 +239,6 @@ table, tr, th, td {
   .LeftPanel {
    width:33%;
    height: auto;
-   margin-right: 0px;
-   padding-right: 0px;
    margin-bottom: -65px;
 
   }
@@ -253,11 +246,9 @@ table, tr, th, td {
   .planet-photo {
     width: 90%;
     height: 90%;
-    align-self: center;
     }
   .main {
     width:65%;
-    margin-left: 5px;
     height: 100%
   }
 
@@ -280,18 +271,14 @@ table, tr, th, td {
   .LeftPanel {
    width:33%;
    height: auto;
-   margin-right: 0px;
-   padding-right: 0px;
   }
 
   .planet-photo {
     width: 90%;
     height: 90%;
-    align-self: center;
     }
   .main {
     width:65%;
-    margin-left: 5px;
     height: 100%
   }
 

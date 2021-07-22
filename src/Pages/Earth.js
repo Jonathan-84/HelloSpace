@@ -66,6 +66,7 @@ const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}
     return (
       <>
       <h1 className="title ">Earth</h1>
+      <br></br>
         <a href={image}>
           <img  alt="Earth from DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument." src={image} className="earth-photo"/>
           </a>

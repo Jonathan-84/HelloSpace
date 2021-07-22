@@ -53,7 +53,7 @@ class Home extends Component {
           <span>
             <p>It's a video of the day! Click the icon to be redirected to it!</p>
             <a href={this.state.image}>
-          <img  alt='random astronomy' src={video}  height="200" width="200"/>
+          <img  className='planet-photo' alt='random astronomy' src={video}  height="200" width="200"/>
           </a>
           
           </span>
@@ -61,7 +61,7 @@ class Home extends Component {
       } else {
         showMedia = (
           <a href={this.state.image}>
-          <img  alt='random astronomy' src={this.state.image}  height="300" width="500"/>
+          <img  className='planet-photo' alt='random astronomy' src={this.state.image}  height="300" width="500"/>
           </a>
         )
       }
@@ -70,15 +70,15 @@ class Home extends Component {
         return (
           <>
           <div>
-          <h1 className='title '>Welcome</h1>
+          <h1 className='title'>Welcome</h1>
           <p className='explText'>Like many, I love NASA. It's more than a government agency, it's... possiblity, potential, wonder, humanity at its best
             and much more. This mini-project as been an opportunity to geek out and experiment for the first time (undoubtably
             not the last time) with the NASA APIs.
           </p>
-          <h3>Astronomy Photo of the Day</h3>
+          <h3 className="title">Astronomy Photo of the Day</h3>
           {showMedia}
       
-            <p>{this.state.title}</p>
+            <p className='explText'>{this.state.title}</p>
             <p className='explText'>{this.state.explanation}</p>
             </div>
             <br>
