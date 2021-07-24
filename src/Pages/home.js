@@ -60,9 +60,11 @@ class Home extends Component {
         )
       } else {
         showMedia = (
-          <a href={this.state.image}>
+          <span >
+          <a href={this.state.image} >
           <img  alt='random astronomy' src={this.state.image} className="earth-photo"/>
           </a>
+          </span>
         )
       }
       const { image, title, explanation} = this.state;

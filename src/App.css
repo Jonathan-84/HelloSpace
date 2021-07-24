@@ -40,19 +40,13 @@ code {
   overflow: auto;
 }
 
-.planet-photo {
+.planet-photo, .earth-photo {
   width: 100%;
   max-width: 400px;
   height: auto;
   flex-grow: 1;
+  margin: 2vw;
 
-}
-
-.earth-photo {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  flex-grow: 1;
 }
 
 .footer {
@@ -173,10 +167,11 @@ table, tr, th, td {
   padding: 0px 10px;
   }
 
-  .planet-photo {
+  .planet-photo, .earth-photo {
     width: 90%;
     height: 90%;
   }
+
 
   .main {
     width:65%;
@@ -203,14 +198,14 @@ table, tr, th, td {
    visibility: hidden;
    width:0%;
    height: auto;
-   margin-left: 0%;
   padding: 0px 10px;
   }
 
-  .planet-photo {
+  .planet-photo, .earth-photo {
     width: 90%;
-    height: 90%;
+    height: auto;
     }
+
 
   .main {
     width:auto;
@@ -243,10 +238,11 @@ table, tr, th, td {
 
   }
 
-  .planet-photo {
+  .planet-photo, .earth-photo {
     width: 90%;
-    height: 90%;
+    height: auto;
     }
+
   .main {
     width:65%;
     height: 100%
@@ -273,9 +269,9 @@ table, tr, th, td {
    height: auto;
   }
 
-  .planet-photo {
+  .planet-photo, .earth-photo {
     width: 90%;
-    height: 90%;
+    height: auto;
     }
   .main {
     width:65%;
