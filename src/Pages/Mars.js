@@ -49,7 +49,7 @@ class Mars extends Component {
           <a href={this.state.image}>
           <img  alt='mars from perseverance' src={this.state.marspic}  className="planet-photo"/>
           </a>
-          <p>Perseverance's latest photo from Mars</p>
+          <p className='explText'>Perseverance's latest photo from Mars</p>
     
             </div>
             <br>

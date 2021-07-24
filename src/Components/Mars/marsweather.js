@@ -155,7 +155,7 @@ console.log(cleanLat, cleanLong)
     return (
       <>
       <h1 className="title">Mars Weather</h1>
-      <p className='subtitle'> Mars Data is from the Curiosity Rover (Rover Environmental Monitoring Station)</p>
+      <p className='explText'> Mars Data is from the Curiosity Rover (Rover Environmental Monitoring Station)</p>
       <div className='w3-responsive'>
       <table className="w3-table-all table-header-text">
 <tr >
@@ -192,7 +192,7 @@ console.log(cleanLat, cleanLong)
 </div>
 
         <p>Date that Mar's weather data was last received: {fixedDate}</p>
-        <p> For now the location is New York City from the Open Weather API, but this will be corrected to capture use your coordinates{/** If you browser doesn't support, or you don't accept HTML5 geolocation which captures your
+        <p className='explText'> For now the location is New York City from the Open Weather API, but this will be corrected to capture use your coordinates{/** If you browser doesn't support, or you don't accept HTML5 geolocation which captures your
           Longitude and Latitude, New York City will be the place holder 
     location.*/}
         </p>

@@ -68,6 +68,7 @@ code {
 
 .title {
   text-align: center;
+  
 }
 
 
@@ -149,6 +150,8 @@ code {
   border-collapse: collapse;
   width: 100%;
   line-height: 2em;
+  align-items: center;
+  justify-items: center;
 }
 
 

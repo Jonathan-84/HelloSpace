@@ -80,7 +80,7 @@ class Home extends Component {
           <h3 className="title">Astronomy Photo of the Day</h3>
           {showMedia}
       
-            <p className='explText'>{this.state.title}</p>
+            <p className='title'>{this.state.title}</p>
             <p className='explText'>{this.state.explanation}</p>
             </div>
             <br>
