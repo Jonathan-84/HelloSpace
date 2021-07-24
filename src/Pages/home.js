@@ -53,7 +53,7 @@ class Home extends Component {
           <span>
             <p>It's a video of the day! Click the icon to be redirected to it!</p>
             <a href={this.state.image}>
-          <img  className='planet-photo' alt='random astronomy' src={video}  height="200" width="200"/>
+          <img  alt='random astronomy' src={video} className="earth-photo" />
           </a>
           
           </span>
@@ -61,7 +61,7 @@ class Home extends Component {
       } else {
         showMedia = (
           <a href={this.state.image}>
-          <img  className='planet-photo' alt='random astronomy' src={this.state.image}  height="300" width="500"/>
+          <img  alt='random astronomy' src={this.state.image} className="earth-photo"/>
           </a>
         )
       }
