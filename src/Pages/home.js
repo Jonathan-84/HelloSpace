@@ -71,7 +71,7 @@ class Home extends Component {
       console.log(image, title, explanation)
         return (
           <>
-          <div>
+         
           <h1 className='title'>Welcome</h1>
           <p className='explText'>Like many, I love NASA. It's more than a government agency, it's... possiblity, potential, wonder, humanity at its best
             and much more. This mini-project as been an opportunity to geek out and experiment for the first time (undoubtably
@@ -82,9 +82,10 @@ class Home extends Component {
       
             <p className='title'>{this.state.title}</p>
             <p className='explText'>{this.state.explanation}</p>
-            </div>
+          
             <br>
             </br>
+            <br></br>
             <br></br>
 </>
        )
