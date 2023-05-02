@@ -11,7 +11,6 @@ used conversions below so that everyone can see the Temperature compared
 to their local metric.
 */
 
-
 const APIurl = 'https://api.maas2.apollorion.com/';
 
     class MarsWeather extends Component {
@@ -48,10 +47,8 @@ const APIurl = 'https://api.maas2.apollorion.com/';
                       pressure: response.pressure
                     //  marspic:response.latest_photos[0].img_src
                      
-                
                     })
-                })
-                
+                })     
         }
       
         render() {

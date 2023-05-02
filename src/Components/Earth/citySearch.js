@@ -73,34 +73,3 @@ import EarthWeather from "../Earth/earthweather";
   }
   
     export default CitySearch;
-  
-
-// Below code was for selecting their city, keeping it in case I go with that 
-// for browsers that do not let you use html geolocation in the future
-/*
-
-function CitySearch() {
-  const [city, setCity] = useState(" ");
-
-  const handleInput = event => {
-    setCity(event.target.value);
-  };
-
-  const logValue = () => {
-    console.log(city);
-  };
-
-  return (
-    <>
-    
-    <div>
-      <input onChange={handleInput} placeholder="Enter name"/>
-      <button onClick={logValue}>Log value</button>
-    </div>
-    </>
-  );
-}
-
-
-export default CitySearch;
-*/
