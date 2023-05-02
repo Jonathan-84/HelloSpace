@@ -11,13 +11,15 @@ function Navbar(){
                   <div className="header-image">
                     <div className='header-container'>
                   <h2>
-                      <Link to={"/Home"} className="nav-text"> Hello Space</Link>
+                      <Link to={"/home"} className="nav-text"> Hello Space</Link>
                       </h2>
                 <div className='nav-links'>
        {/*      <ul >
                 <Link to="/" className="nav-text">Temp</Link>
                         </ul>*/}
-                
+             <ul>
+                <Link to={"/home"} className="nav-text">Home</Link>
+                </ul>    
        <ul>
                 <Link to={"/earth"} className="nav-text">Earth</Link>
                 </ul>

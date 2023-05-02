@@ -3,6 +3,7 @@ import '../App.css';
 import video from '../Assets/Images/video.png';
 
     const api_key= process.env.REACT_APP_GOVT_API_KEY;
+
     
 // this page can only be accessed by clicking the website title, 
 // maybe add button in future.
@@ -13,6 +14,7 @@ import video from '../Assets/Images/video.png';
 //full API request link: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
 const APIurl = `https://api.nasa.gov/planetary/apod?api_key=${api_key}`;
+console.log(APIurl)
 
 class Home extends Component {
     constructor(props) {
@@ -21,7 +23,10 @@ class Home extends Component {
           image: [],
           title: [],
           explanation: [],
-          type: []
+          type: [],
+          mindate:[],
+          maxdate:[],
+          name:[]
          
 
         };
@@ -30,6 +35,7 @@ class Home extends Component {
 
     componentDidMount() {
         fetch(APIurl)
+   
             .then(response => response.json())
             .then(response => {
                 this.setState({
@@ -37,13 +43,14 @@ class Home extends Component {
                     title:response.title,
                     explanation:response.explanation,
                     media: response.media_type
-
-                  
                 })
             })
+   
             
     }
-  
+
+
+
     render() {
  // After Discovering that "Picture of the Day" could be a video, I needed to fix the ugly
  // site that was a picture error on the webpage
@@ -92,4 +99,3 @@ class Home extends Component {
    }
         }
 export default Home;
-

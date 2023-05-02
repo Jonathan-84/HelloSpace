@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import moment from 'moment';
 //import NearEarth from '../Components/Earth/nearEarth';
+// const NOAA_key= process.env.REACT_APP_NOAA;
 
 const api_key= process.env.REACT_APP_GOVT_API_KEY;
 const ePhotoAPI = `https://api.nasa.gov/EPIC/api/natural/images?api_key=${api_key}`
@@ -46,6 +47,28 @@ class Earth extends Component {
           
   }
 
+  // Look to have the NOAA API Call to show avg temp on Earth
+//   earthClimate(){
+//     var noaaAPI='www.ncei.noaa.gov/cdo-web/api/v2/datasets/GSOY'
+//     fetch(noaaAPI, {
+//       credentials: "include",
+//       method: "GET",
+//       headers: {
+//         token: NOAA_key,
+//       }
+//   })
+//   .then(response => response.json())
+//     .then(response => {
+//       this.setState({
+//           mindate:response.results.mindate,
+//           maxdate:response.results.maxdate,
+//           name:response.results.name,
+//       })
+      
+//   })
+//   console.log(this.mindate,this.maxdate,this.name)
+// }
+
   render() {
 
     const {earthPic, earthDate, imageCaption, imageLat, imageLong} = this.state;
@@ -82,4 +105,3 @@ const image= `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}
   }; 
 }
   export default Earth;
-
